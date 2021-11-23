@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119.202" height="81.349" viewBox="0 0 130 81.349">
+    <g id="Group_100" data-name="Group 100" transform="translate(-109.34 -46.016)">
+        <g id="Group_99" data-name="Group 99">
+            <g id="Group_96" data-name="Group 96">
+                <text id="Web_Mairie" data-name="Web Mairie" transform="translate(112.542 122.365)"
+                    fill="#694EFF" font-size="21.004" font-family="Inter-Bold, Inter" font-weight="700">
+                    <tspan x="0" y="0">Web Mairie</tspan>
+                </text>
+            </g>
+            <g id="Group_98" data-name="Group 98">
+                <g id="Group_97" data-name="Group 97">
+                    <path id="Path_123" data-name="Path 123"
+                        d="M109.34,46.035h14.64l6.613,29.756h.379l7.839-29.756h11.526l7.841,29.851h.376l6.613-29.851H179.81L165.544,94.4H152.981l-8.218-27.017h-.379L136.167,94.4H123.6Z"
+                        fill="#694EFF" />
+                    <path id="Path_124" data-name="Path 124"
+                        d="M220.892,46.016V94.4H208.076V66.46h-.4L196.9,94.043h-7.716L178.408,66.238h-.4V94.4H169.45L182.8,49.164l9.978,24.257h.532l11.264-27.406Z"
+                        fill="#694EFF" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

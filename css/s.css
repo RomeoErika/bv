@@ -1,0 +1,69 @@
+
+.actualite-img-1{
+    z-index: 1;
+} 
+.actualite-img-1 img{
+    position: relative;
+    top: -20px;
+    margin-left: 10%;
+    width: 40vw;
+}
+.actualite-img-3 img{
+    max-height: 100vh;
+    position: relative;
+    top: -20px;
+    width: 27vw;
+}
+.actualite-img-2 img{
+    max-height: 100vh;
+    position: relative;
+    top: -20px;
+    width: 27vw;
+}
+.actuality-section{
+    margin-top: 90px;
+}
+.actuality-section-content {
+    background-color: #7E67FF;
+    border-top-left-radius:90% ;
+    border-bottom-right-radius:70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+}
+.actualite-img-1 img{
+    margin-left: 10%;
+    width: 40vw;
+}
+.actualite-img-1 .description-actu{
+    position: relative;
+    top: -43vh;
+    left: 20%;
+    width: 32vw;
+}
+.actualite-img-1 .description-actu button:nth-child(1),.actualite-img-2 .description-actu button:nth-child(1){
+    border: none;
+    width: 8vw;
+    height: 30px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: rgb(245, 7, 7);
+    color: #fff;
+}
+.actualite-img-1 .description-actu .savoirPlus,.actualite-img-2 .description-actu .savoirPlus{
+    border: none;
+    background:none;
+    color: #fff;
+}
+.actualite-img-1 .description-actu h1,.actualite-img-2 .description-actu h1{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+.actualite-img-1 .description-actu p,.actualite-img-2 .description-actu p{
+    font-size: 1vw;
+    color: rgb(255, 255, 255);
+}
+.actualite-img-2 img,.actualite-img-3 img{
+    width: 20vw;
+}
