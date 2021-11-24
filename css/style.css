@@ -2,9 +2,13 @@
     font-family: "google";
     src: url(../fonts/GoogleSans-Regular.ttf);
 }
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/Roboto-Black.ttf);
+}
 body{
     background-image: url(../image/09.jpg);
-    font-family: "google";
+    font-family: "google",sans-serif;
 }
 .logo{
     height: 40px;
@@ -17,7 +21,7 @@ body{
     padding: 0px 4%;
     align-items: center;
 }
-.menu-navigation ul ,.social-logo{
+.menu-navigation ul ,.right{
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -31,7 +35,7 @@ body{
     cursor: pointer;
     list-style-type: none;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 0.8em;
 }
 .menu-navigation ul div li:hover{
     color: rgb(18, 75, 245);
@@ -47,7 +51,7 @@ body{
     border-bottom-color: rgb(18, 75, 245);
 
 }
-nav .social-logo .facebook{
+nav .facebook{
     cursor: pointer;
     width: 3vw;
     height: 3vw;
@@ -59,29 +63,29 @@ nav .social-logo .facebook{
     border-style: solid;
     border-color: rgba(102, 102, 102, 0.521);
 }
-nav .social-logo .facebook:hover{
+nav .facebook:hover{
     border-color: rgb(18, 75, 245);
     background-color: rgb(18, 75, 245);
 }
-nav .social-logo .facebook p{
+nav .facebook p{
     margin: 0px;
     font-size: 17px;
     color: #fff;
     transition: all 0.2s linear;
 }
-nav .social-logo .facebook p:hover{
+nav .facebook p:hover{
     transform: scale(120%);
 }
-nav .social-logo .facebook.active{
+nav .facebook.active{
     background-color: rgb(18, 75, 245);
 }
-.lef p{
+nav p{
     font-size: 20px;
     color: blue;
     margin-left: 1vw;
     font-weight: 700;
 }
-.social-logo{
+.right{
     margin-right: 2vw;
 }
 .accueil-division{
@@ -104,7 +108,7 @@ nav .social-logo .facebook.active{
     height: 45vh;
 }
 .message h2{
-    font-size: 2vw;
+    font-size: 1.5em;
     font-weight: 400;
 }
 .message p{
@@ -114,7 +118,7 @@ nav .social-logo .facebook.active{
     border-radius: 8px;
     margin-top: 7vh;
     border: none;
-    background-color: rgb(61, 218, 14);
+    background-color: #2dded4;
     cursor: pointer;
     color: #fff;
     width: 70%;
@@ -125,14 +129,14 @@ nav .social-logo .facebook.active{
     background-color: transparent;
     border: 1px;
     border-style: solid;
-    border-color:  rgb(61, 218, 14);
+    border-color:  #2dded4;
 }
 .image-accueil{
     margin-left: 8%;
     display: flex;
     justify-content: space-between;
 }
-.image-accueil div{
+.image-accueil figure{
     border-radius: 4px;
     width: 20vw;
     max-height: 70vh;
@@ -140,16 +144,16 @@ nav .social-logo .facebook.active{
     overflow: hidden;
     transition: all 0.2s linear;
 }
-.image-accueil div:nth-child(2){
+.image-accueil figure:nth-child(2){
     margin-top: 8vh;
 }
-.image-accueil div:nth-child(3){
+.image-accueil figure:nth-child(3){
     margin-top: 14vh;
 }
-.image-accueil div img{
+.image-accueil figure img{
     transition: all 1.2s linear;
 }
-.image-accueil div img:hover{
+.image-accueil figure img:hover{
     transform: scale(116%);
 }
 .card-sectio{
@@ -159,7 +163,6 @@ nav .social-logo .facebook.active{
     margin-left: 2%;
     margin-bottom: 2%;
     display: flex;
-    width: 20vw;
     justify-content: left;
     border-left: 8px;
     border-top: 0px;
@@ -183,6 +186,13 @@ nav .social-logo .facebook.active{
     grid-auto-rows: minmax(100px, auto);
 }
 .content-card-section .card{
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +202,7 @@ nav .social-logo .facebook.active{
     transition: all 0.2s linear;
 }
 .content-card-section  .card p{
-    font-size: 1.3vw;
+    font-size: 0.8em;
 }
 .content-card-section .card .hidden{
     display: none;
@@ -255,7 +265,7 @@ nav .social-logo .facebook.active{
     position: relative;
     top: -198px;
     margin-left: 20px;
-    width: 32vw;
+    width: 100%;
 }
 .actualite-img-2 .description-actu,.actualite-img-3 .description-actu{
     position: relative;
@@ -264,7 +274,7 @@ nav .social-logo .facebook.active{
 }
 .actualite-img-1 .description-actu button:nth-child(1){
     border: none;
-    width: 8vw;
+    width: 26%;
     height: 30px;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -273,7 +283,7 @@ nav .social-logo .facebook.active{
 }
 .actualite-img-2 .description-actu button:nth-child(1){
     border: none;
-    width: 8vw;
+    width: 50%;
     height: 30px;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -282,7 +292,7 @@ nav .social-logo .facebook.active{
 }
 .actualite-img-3 .description-actu button:nth-child(1){
     border: none;
-    width: 8vw;
+    width: 50%;
     height: 30px;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -297,11 +307,11 @@ nav .social-logo .facebook.active{
 .actualite-img-1 .description-actu h1,.actualite-img-2 .description-actu h1,.actualite-img-3 .description-actu h1{
     width: 100%;
     color: #fff;
-    font-size: 1.2vw;
+    font-size: 1em;
     font-weight: 700;
 }
 .actualite-img-1 .description-actu p,.actualite-img-2 .description-actu p,.actualite-img-3 .description-actu p{
-    font-size: 1vw;
+    font-size: 0.8em;
     color: rgb(255, 255, 255);
 }
 .actualite-img-1 ,.actualite-img-2,.actualite-img-3{
@@ -319,7 +329,7 @@ nav .social-logo .facebook.active{
     height: 40px;
     background-color: #1616f5;
     transition: all 0.3s;
-    font-size: 1.2vw;
+    font-size: 0.8em;
 }
 .voire-actu-btn button:hover{
     box-shadow: 0px 0px 10px #1616f5;
@@ -434,11 +444,11 @@ nav .social-logo .facebook.active{
 .fotter-section-top .card-logo div:hover{
     border-radius: 50%;
 }
-.fotter-section-top  button{
+.fotter-section-top button{
     border: none;
     background-color: #fff;
     border-radius: 3px;
-    font-size: 1.2vw;
+    font-size: 0.8em;
     width: 190px;
     height: 40px;
 }
@@ -451,6 +461,12 @@ nav .social-logo .facebook.active{
 .fotter-contents p{
     margin: 1px 0px;
     font-size: 13px;
+}
+.bar{
+    background-color: rgba(97, 97, 97, 0.534);
+    opacity: 0.3;
+    width: 2px;
+    height: 200px;
 }
 .partenaire {
     text-align: center;
@@ -516,7 +532,7 @@ nav .social-logo .facebook.active{
     border: none;
     height: 40px;
     border-radius: 3px;
-    font-size: 19px;
+    font-size: 0.9em;
 }
 .btn-scroll-top button:hover{
     background-color: rgba(129, 128, 128,0.4);;
@@ -524,4 +540,117 @@ nav .social-logo .facebook.active{
 .btn-scroll-top button a{
     text-decoration: none;
     color: #000;
+}
+@media (max-width:800px){
+    .bar{
+        display: none;
+    }
+    .image-accueil{
+        display: none;
+    }
+    .accueil-division{
+        border: none;
+        border-radius: 0px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .message{
+        position: initial;
+        border: 4px;
+        border-style: solid;
+        background-color: rgba(83, 83, 83, 0.314);
+        border-radius: 9px;
+        width: 400px;
+        padding: 3% 5% 3% 5%;
+        margin-top: 8%;
+        height: 100%;
+    }
+    .message div button{
+        display: initial;
+        margin: 0px;
+        font-size: 1em;
+    }
+    .menu-navigation ul{
+        display: none;
+    }
+    .left{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
+    }
+    .left .facebook{
+        width: 40px;
+        height: 40px;
+    }
+    .right button{
+        background-color: transparent;
+        border: none;
+    }
+    .right button:hover{
+        background-color:rgba(85, 85, 85, 0.2);
+    }
+    .magasine-description button{
+        font-size: 0.6em;
+    }
+    .content-card-section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .magasine-description p{
+        font-size: 0.8em;
+    }
+}
+@media(max-width:610px){
+    .actuality-section-contents{
+        display: grid;
+        justify-content: center;
+    }
+    .actualite-img-1,.actualite-img-2,.actualite-img-3{
+        width: 87vw;
+        margin-bottom: 2%;
+    }
+    .magasine-content{
+        padding-bottom: 3%;
+    }
+    .voire-actu-btn {
+        padding-left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .voire-actu-btn button{
+        margin: 0px;
+        width: 240px;
+        padding: 4px 5%;
+    }
+    .fotter-contents {
+        display: grid;
+        justify-content: center;
+        grid-gap: 10%;
+        height: 401px;
+    }
+    .horaire {
+        grid-column: 3/3;
+    }
+    .logoMarie,.partenaire{
+        grid-column: 1/4;
+        justify-content: center;
+        display: grid;
+    }
+    .fotter-boutom ul {
+        padding: 0px;
+        display: initial;
+        margin: 30px 0px;
+        align-items: center;
+    }
+    .fotter-boutom ul li {
+        height: auto;
+    }
+    .fotter-boutom ul li a {
+        font-size: 0.6em;
+    }
+    .actualite-img-2 .description-actu button:nth-child(1),.actualite-img-3 .description-actu button:nth-child(1){
+        width: 26%;
+    }
 }
